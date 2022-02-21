@@ -8,6 +8,7 @@ figure, figcaption, footer, header, nav, section {
     border: 0;
     font-size: 100%;
     font: inherit;
+    color: inherit;
     vertical-align: baseline;
 }
 

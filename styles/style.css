@@ -8,11 +8,21 @@
     --primary-font-color: #fff;
 }
 
-
-
 html {
     font-size: 16px;
     font-family: 'Libre Franklin', sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 /* Header */
@@ -21,7 +31,29 @@ html {
     color: var(--primary-font-color);
     font-weight: 700;
     height: 100px;
-    padding: 0.25rem;
+    padding: 1.25rem 2.5rem;
+    justify-content: space-between;;
+}
+
+.main-header__brand {
+    gap: 0.8rem;
+}
+
+.main-brand--logo {
+    font-size: 1.5rem;
+}
+
+.main-nav {
+    flex-basis: 20%;
+}
+
+.main-nav__items {
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: 1.1rem;;
 }
 
 .flex {

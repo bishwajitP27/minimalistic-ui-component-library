@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/brand.svg">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="../assets/brand.svg">
+    <script src="https://kit.fontawesome.com/611bffe5ba.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Minimalistic-UI</title>
 </head>
 <body>
-    
+    <header class="main-header flex align-item--center">
+        <a class="main-header__brand flex" href="../index.html">
+            <div class="main-brand--logo"><i class="fa-solid fa-dragon"></i></div>
+            <h2 class="main-brand--text">minimalistic UI</h2>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav__items flex">
+                <li class="main-nav--item">
+                    <a class="nav-link" href="../index.html">
+                        <i class="fa-solid fa-house-user"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="main-nav--item">
+                    <a class="nav-link" href="javascript:void(0)">Get Started</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
