@@ -52,7 +52,6 @@ h5 {
     height: calc(100vh - var(--header-height) - var(--footer-height));
     position: fixed;
     top: var(--header-height);
-    opacity: 0.9;
 }
 
 /* Header */
@@ -104,6 +103,20 @@ h5 {
 
 .align-item--center {
     align-items: center;
+}
+
+.hero-main--text {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 3rem;
+    color: var(--primary-font-color);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    border-radius: 5px;
+    height: 50%;
+    text-align: center;
 }
 
 .main-footer {
