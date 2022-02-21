@@ -19,10 +19,27 @@ a, button {
 
 h1 {
     font-size: 2.5rem;
+    line-height: 4rem;
 }
 
 h2 {
     font-size: 2rem;
+    line-height: 2.5rem;;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 0.5rem;
+    line-height: 1rem;
 }
 
 /* Header */
@@ -42,7 +59,12 @@ h2 {
 }
 
 .main-brand--logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    align-self: center;
+}
+
+.main-brand--text {
+    letter-spacing: 0.1rem;;
 }
 
 .main-nav {
