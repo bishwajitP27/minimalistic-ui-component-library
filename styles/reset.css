@@ -12,6 +12,10 @@ figure, figcaption, footer, header, nav, section {
     vertical-align: baseline;
 }
 
+header, footer {
+    display: block;
+}
+
 ol, ul {
     list-style: none;
 }

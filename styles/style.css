@@ -32,7 +32,9 @@ h2 {
     font-weight: 700;
     height: 100px;
     padding: 1.25rem 2.5rem;
-    justify-content: space-between;;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 .main-header__brand {
@@ -67,4 +69,31 @@ h2 {
 
 .align-item--center {
     align-items: center;
+}
+
+.main-footer {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    background: #00838f;
+    position: absolute;
+    bottom: 0;
+}
+
+.main-footer--items {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    background: transparent;
+}
+
+.main-footer--item {
+    font-size: 2.5rem;
+    background: transparent;
+}
+
+.main-footer--item > a > i {
+    height: 80%;
+    color: #fff;
 }
