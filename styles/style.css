@@ -119,6 +119,40 @@ h5 {
     text-align: center;
 }
 
+.sidebar {
+    height: 100vh;
+    flex-basis: 300px;
+    min-width: 300px;
+    background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
+    position: fixed;
+    top: var(--header-height);
+    padding: 0 2rem; 
+}
+
+.sidebar-heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border-bottom: 1px solid grey; */
+    padding: 0.1rem 0;
+    margin: 0.2rem 0;
+}
+
+.sidebar-item{
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.doc-list a{
+    text-decoration: none;
+    color: var(--secondoryColor);
+}
+
+.main-content {
+    flex: 1;
+    background: #f0f1f3;
+    /* background: #111; */
+}
+
 .main-footer {
     height: var(--footer-height);
     width: 100%;
