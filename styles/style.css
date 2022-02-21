@@ -6,6 +6,8 @@
 :root {
     --header-background: #111;
     --primary-font-color: #fff;
+    --header-height: 100px;
+    --footer-height: 80px;
 }
 
 html {
@@ -42,12 +44,23 @@ h5 {
     line-height: 1rem;
 }
 
+.body-background {
+    background: url(../assets/background.svg) bottom center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    position: fixed;
+    top: var(--header-height);
+    opacity: 0.9;
+}
+
 /* Header */
 .main-header {
     background: var(--header-background);
     color: var(--primary-font-color);
     font-weight: 700;
-    height: 100px;
+    height: var(--header-height);
     padding: 1.25rem 2.5rem;
     justify-content: space-between;
     position: fixed;
@@ -94,7 +107,7 @@ h5 {
 }
 
 .main-footer {
-    height: 80px;
+    height: var(--footer-height);
     width: 100%;
     margin: auto;
     background: #00838f;
