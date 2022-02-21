@@ -72,7 +72,7 @@ h2 {
 }
 
 .main-footer {
-    height: 100px;
+    height: 80px;
     width: 100%;
     margin: auto;
     background: #00838f;
@@ -94,6 +94,5 @@ h2 {
 }
 
 .main-footer--item > a > i {
-    height: 80%;
     color: #fff;
 }
