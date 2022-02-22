@@ -1,31 +1,7 @@
 @import url(reset.css);
 @import url(../components/component.css);
-
-
-
-/* CSS Variables */
-:root {
-    --header-background: #111;
-    --primary-font-color: #fff;
-    --header-height: 100px;
-    --footer-height: 80px;
-    --primary-alert-background-clr:#7FD2E2;
-    --primary-alert-text-clr: #29439b;
-    --secondary-alert-background-clr:#eaeafc;
-    --secondary-alert-text-clr: #696b89;
-    --success-alert-background-clr:#84f2c9;
-    --success-alert-text-clr: #1b7032;
-    --danger-alert-background-clr:#fcc4c5;
-    --danger-alert-text-clr: #dc3555;
-    --warning-alert-background-clr: #ffe6c5;
-    --warning-alert-text-clr: #ff9205;
-    --primary-border-clr: #caced3;
-    --primary-btn-clr: #0d6efd;
-    --secondary-btn-clr: #6c757d;
-    --success-btn-clr: #198754;
-    --danger-btn-clr: #dc3545;
-    --warning-btn-clr: #ffc107;
-}
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap');
 
 html {
     font-size: 16px;
@@ -60,6 +36,11 @@ h4 {
 h5 {
     font-size: 0.5rem;
     line-height: 1rem;
+}
+
+h6 {
+    font-size: 0.4rem;
+    line-height: 0.5rem;
 }
 
 .body-background {
@@ -120,6 +101,10 @@ h5 {
     display: flex;
 }
 
+.flex-direction--column {
+    flex-direction: column;
+}
+
 .flex-center {
     justify-content: center;
     align-items: center;
@@ -148,13 +133,13 @@ h5 {
 }
 
 .sidebar-container {
-    flex-basis: 300px;
+    flex-basis: 25%;
+    max-width: 250px;
     height: calc(100vh - var(--footer-height));
+    background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
 }
 
 .sidebar {
-    min-width: 300px;
-    background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
     position: fixed;
     padding: 0 2rem; 
 }
@@ -162,7 +147,6 @@ h5 {
 .sidebar-heading{
     font-size: 1.2rem;
     font-weight: bold;
-    /* border-bottom: 1px solid grey; */
     padding: 0.1rem 0;
     margin: 0.2rem 0;
 }
@@ -174,6 +158,7 @@ h5 {
 
 .main-content {
     flex: 1;
+    width: 75%;
     background: #f0f1f3;
     padding: 0.25rem 1rem;
     left: 300px;
@@ -229,3 +214,24 @@ h5 {
 .absolute-positioned {
     position: absolute;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+div > pre.code-snippet code{
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+}
+
