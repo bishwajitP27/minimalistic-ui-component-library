@@ -156,6 +156,14 @@ h6 {
     font-size: 1rem;
 }
 
+li.sidebar-item {
+    cursor: pointer;
+}
+
+li.sidebar-item:hover {
+    color: #7c7777;
+}
+
 .main-content {
     flex: 1;
     width: 75%;
