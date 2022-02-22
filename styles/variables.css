@@ -1,0 +1,26 @@
+/* CSS Variables */
+:root {
+    --header-background: #111;
+    --primary-font-color: #fff;
+    --header-height: 100px;
+    --footer-height: 80px;
+    --primary-alert-background-clr:#7FD2E2;
+    --primary-alert-text-clr: #29439b;
+    --secondary-alert-background-clr:#eaeafc;
+    --secondary-alert-text-clr: #696b89;
+    --success-alert-background-clr:#84f2c9;
+    --success-alert-text-clr: #1b7032;
+    --danger-alert-background-clr:#fcc4c5;
+    --danger-alert-text-clr: #dc3555;
+    --warning-alert-background-clr: #ffe6c5;
+    --warning-alert-text-clr: #ff9205;
+    --primary-border-clr: #caced3;
+    --primary-btn-clr: #0d6efd;
+    --secondary-btn-clr: #6c757d;
+    --success-btn-clr: #198754;
+    --danger-btn-clr: #dc3545;
+    --warning-btn-clr: #ffc107;
+    --code-bg-color: #2e2c2c;
+    --screen-width-lg: 1200px;
+    --screen-width-xl: 1536px;
+}
