@@ -1,0 +1,48 @@
+@import url(alert/alert.css);
+@import url(avatar/avatar.css);
+@import url(button/button.css);
+@import url(badge/badge.css);
+@import url(cards/cards.css);
+
+.component-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2rem 3rem;
+}
+
+.component-heading {
+    font-weight: bold;
+}
+
+.component-sub--heading {
+    font-size: 1.5rem;;
+}
+
+.component-example--heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.component-examples {
+    border: 1px solid var(--primary-border-clr);
+    border-radius: 0.25rem;
+    width: 70%;
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 0.7rem;
+}
+
+.code-snippet {
+    width: 70%;
+    max-width: 1100px;
+    padding: 0.7rem;
+    height: 320px;
+    margin: 1rem auto;
+    border: 1px solid var(--primary-border-clr);
+    border-radius: 0.25rem;
+}
+
+.alert-snippet {
+    height: 650px;
+}

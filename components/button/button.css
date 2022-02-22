@@ -1,0 +1,61 @@
+.button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button-primary{
+    background-color: var(--primary-btn-clr);
+    color: white;
+    border: 2px solid var(--primary-btn-clr);
+}
+
+.button-secondary{
+    background-color: var(--secondary-btn-clr);
+    color: white;
+    border: 2px solid var(--secondary-btn-clr);
+}
+
+.button-success{
+    background-color: var(--success-btn-clr);
+    color: white;
+    border: 2px solid var(--success-btn-clr);
+}
+
+.button-warning{
+    background-color: var(--warning-btn-clr);
+    border: 2px solid var(--warning-btn-clr);
+}
+
+.button-danger{
+    background-color: var(--danger-btn-clr);
+    color: white;
+    border: 2px solid var(--danger-btn-clr);
+}
+
+.button-lg-floating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: white;
+    min-width: 0rem;
+}
+.button-md-floating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: white;
+    min-width: 0rem;
+}

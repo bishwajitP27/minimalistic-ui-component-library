@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(../components/component.css);
 
 
 
@@ -8,11 +9,28 @@
     --primary-font-color: #fff;
     --header-height: 100px;
     --footer-height: 80px;
+    --primary-alert-background-clr:#7FD2E2;
+    --primary-alert-text-clr: #29439b;
+    --secondary-alert-background-clr:#eaeafc;
+    --secondary-alert-text-clr: #696b89;
+    --success-alert-background-clr:#84f2c9;
+    --success-alert-text-clr: #1b7032;
+    --danger-alert-background-clr:#fcc4c5;
+    --danger-alert-text-clr: #dc3555;
+    --warning-alert-background-clr: #ffe6c5;
+    --warning-alert-text-clr: #ff9205;
+    --primary-border-clr: #caced3;
+    --primary-btn-clr: #0d6efd;
+    --secondary-btn-clr: #6c757d;
+    --success-btn-clr: #198754;
+    --danger-btn-clr: #dc3545;
+    --warning-btn-clr: #ffc107;
 }
 
 html {
     font-size: 16px;
     font-family: 'Libre Franklin', sans-serif;
+    /* overflow: hidden; */
 }
 
 a, button {
@@ -63,6 +81,8 @@ h5 {
     padding: 1.25rem 2.5rem;
     justify-content: space-between;
     position: fixed;
+    z-index: 2;
+    top: 0;
     width: 100%;
 }
 
@@ -105,6 +125,12 @@ h5 {
     align-items: center;
 }
 
+.component-hero-section {
+    position: absolute;
+    top: var(--header-height);
+    width: 100%;
+}
+
 .hero-main--text {
     padding: 2rem;
     background: rgba(0, 0, 0, 0.9);
@@ -125,7 +151,6 @@ h5 {
     min-width: 300px;
     background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
     position: fixed;
-    top: var(--header-height);
     padding: 0 2rem; 
 }
 
@@ -142,15 +167,12 @@ h5 {
     font-size: 1rem;
 }
 
-.doc-list a{
-    text-decoration: none;
-    color: var(--secondoryColor);
-}
-
 .main-content {
     flex: 1;
     background: #f0f1f3;
-    /* background: #111; */
+    padding: 0.25rem 1rem;
+    position: absolute;
+    left: 300px;
 }
 
 .main-footer {
@@ -158,7 +180,7 @@ h5 {
     width: 100%;
     margin: auto;
     background: #00838f;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -177,4 +199,29 @@ h5 {
 
 .main-footer--item > a > i {
     color: #fff;
+}
+
+.component-footer {
+    height: var(--footer-height);
+    width: 100%;
+    margin: auto;
+    background: #00838f;
+}
+
+.component-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.relative-positioned {
+    position: relative;
+}
+
+.absolute-positioned {
+    position: absolute;
 }

@@ -1,0 +1,124 @@
+.card{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-horizontal{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 55rem;
+    padding: 1rem;
+}
+.card-horizontal .image-container{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.card-horizontal .wrapper{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.card-horizontal .text-container h5{
+    margin: 0rem;
+}
+.card-horizontal .text-container :nth-child(4){
+    margin: 0.6rem 0rem 0.1rem 0rem;
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    max-width: 36rem;
+    margin-top: 0.8rem;
+}
+.btn-container button{
+    margin: 0.8rem 1rem 0.8rem 0px;
+}
+.discount-percent-horizontal{
+    margin-left: 0.2rem;
+}
+
+/* Card Vertical */
+.card-vertical{
+    max-width: 25rem;
+    width: 100%;
+}
+.card-vertical img{
+    border-radius: 0.8rem 0.8rem 0px 0px;
+}
+.card-vertical .wrapper{
+    margin: 1rem;
+}
+.card-vertical .image-container{
+    height: 100%;
+    max-height: 280px;
+}
+.card-dismiss .image-container{
+    position: relative;
+}
+.card-dismiss .close-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+}
+.card-vertical-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.card-vertical-heading i{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: gray;
+}
+.text-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224,224,224,0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    border-radius: 1rem;
+}
+.text-overlay h4{
+    font-size: 2rem;
+    color: black;
+}
+.card-only-image{
+    max-width: 600px;
+    height: fit-content;    
+}
+.card-only-image .image-container{
+    width: 100%;
+    height: 100%;
+}
+.card-only-image img{
+    border-radius: 1rem;
+}
+
+.card-heading {
+    font-weight: 700;
+}
+
+.card-sub--heading {
+    font-size: 1rem;;
+}
+
+.seller-detail {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
