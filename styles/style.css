@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(../components/component.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap');
 
 
 
@@ -25,6 +26,7 @@
     --success-btn-clr: #198754;
     --danger-btn-clr: #dc3545;
     --warning-btn-clr: #ffc107;
+    --code-bg-color: #2e2c2c;
 }
 
 html {
@@ -60,6 +62,11 @@ h4 {
 h5 {
     font-size: 0.5rem;
     line-height: 1rem;
+}
+
+h6 {
+    font-size: 0.4rem;
+    line-height: 0.5rem;
 }
 
 .body-background {
@@ -118,6 +125,10 @@ h5 {
 
 .flex {
     display: flex;
+}
+
+.flex-direction--column {
+    flex-direction: column;
 }
 
 .flex-center {
@@ -228,4 +239,12 @@ h5 {
 
 .absolute-positioned {
     position: absolute;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div > pre.code-snippet code{
+    padding: 0;
 }
